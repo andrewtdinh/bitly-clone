@@ -18,3 +18,6 @@ def root_link(request, link_slug):
   link.click()
 
   return redirect(link.url)
+
+def create_link(request):
+  return render(request, 'links/create.html')
