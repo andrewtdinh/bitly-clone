@@ -19,5 +19,5 @@ def root_link(request, link_slug):
 
   return redirect(link.url)
 
-def create_link(request):
-  return render(request, 'links/create.html')
+def add_link(request):
+  return render(request, 'links/create.html', {})
